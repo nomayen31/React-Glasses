@@ -1,3 +1,4 @@
+import BrackingNews from "../../Components/BrackingNews";
 import Header from "../../Shared/Header";
 import LeftSideNav from "../../Shared/LeftSideNav";
 import NavBar from "../../Shared/NavBar";
@@ -7,6 +8,7 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
+            <BrackingNews></BrackingNews>
             <NavBar></NavBar>
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
             <div className="border">

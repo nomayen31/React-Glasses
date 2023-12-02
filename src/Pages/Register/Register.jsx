@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
-import NavBar from "../../Shared/NavBar";
+import NavBar from '../../Shared/NavBar';
+import { Link } from 'react-router-dom';
 
-const Login = () => {
-    const handleLogin = (e) =>{
+const Register = () => {
+    const handleRegister = (e) =>{
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
@@ -14,7 +14,7 @@ const Login = () => {
             <h1 className="text-3xl text-center">Please Login</h1>
             <div className="w-4/6 bg-base-200 mx-auto">
                     <div className=" shadow-2xl bg-base-100">
-                        <form onSubmit={handleLogin} className="card-body">
+                        <form onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -31,14 +31,18 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn btn-primary">Register</button>
                             </div>
                         </form>
-                        <p className="text-center mt-4">Dont't have an account <Link className="text-blue-800 font-bold" to='/register '>Register</Link></p>
+                        <p className="text-center mt-4">Already you  have an account please  <Link className="text-blue-800 font-bold" to='/login '>Login</Link></p>
                     </div>
             </div>
         </div>
     );
 };
 
-export default Login;
+export default Register;
+
+
+
+// 9.9
